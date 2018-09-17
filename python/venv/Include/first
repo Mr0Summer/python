@@ -1,0 +1,18 @@
+
+#输入函数
+import math
+pi = 3.14
+radius = float( input("radius: "))
+area = pi * radius ** 2
+print("this cycle area is :", area)
+
+#二维list以及for循环
+s = [ 'python', 'java', ['asp', 'php'], 'scheme' ]
+for x in s :
+    if type(x) == list:
+        for y in x :
+            s.append(y)
+for z in s :
+    if type(z) == list :
+        s.remove(z)
+print('\n',s)
